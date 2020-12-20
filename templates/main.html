@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Review Prediction</title>
+</head>
+<body>
+    <div>
+        <h1>My Amazon Review application</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <label for="review">review</label>
+            <input type="text" name="review" id="review"> <br>
+            <button type="submit">Predict</button>
+        </form>
+        <br>
+        <br>
+        {{ prediction_text }}
+    </div>
+
+</body>
+</html>
